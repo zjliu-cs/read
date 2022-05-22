@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/fragment_read">
+    <fragment
+        android:id="@+id/fragment_read"
+        android:name="com.jaycola99.book.ReadFragment"
+        tools:layout="@layout/fragment_read" />
+    <fragment
+        android:id="@+id/fragment_book_shelf"
+        android:name="com.jaycola99.book.BookShelfFragment"
+        tools:layout="@layout/fragment_book_shelf" />
+    <fragment
+        android:id="@+id/fragment_discovery"
+        android:name="com.jaycola99.book.DiscoveryFragment"
+        tools:layout="@layout/fragment_discovery" />
+    <fragment
+        android:id="@+id/fragment_me"
+        android:name="com.jaycola99.book.MeFragment"
+        tools:layout="@layout/fragment_me" />
+</navigation>
