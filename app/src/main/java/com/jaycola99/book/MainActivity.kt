@@ -16,17 +16,12 @@ class MainActivity : BaseActivity() {
 
     private lateinit var fcv: FragmentContainerView
     private lateinit var bnv: BottomNavigationView
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-//        initView(savedInstanceState)
-//        initData()
-//        initListener()
-    }
 
     override fun initView(savedInstanceState: Bundle?) {
         fcv = findViewById(R.id.nav_main)
         bnv = findViewById(R.id.bnv_main)
         bnv.labelVisibilityMode = NavigationBarView.LABEL_VISIBILITY_LABELED
+
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_main) as NavHostFragment
         val navController = navHostFragment.navController

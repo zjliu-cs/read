@@ -1,13 +1,226 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:padding="15dp"
     tools:context=".DiscoveryFragment">
 
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        tools:ignore="UselessParent">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/discovery"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_discovery_shake"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RelativeOverlap" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_discovery_friends_idea"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="start"
+            android:layout_weight="1"
+            android:background="@drawable/bg_discovery"
+            android:drawableLeft="@drawable/friend_thoughts"
+            android:drawablePadding="7dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/friends_idea"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btn_discovery_small_coterie"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_discovery"
+            android:drawableLeft="@drawable/community"
+            android:drawablePadding="7dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/small_coterie"
+            android:textColor="@color/black"
+
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_discovery_vip_exclusive"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_discovery"
+            android:drawableLeft="@drawable/friend_thoughts"
+            android:drawablePadding="7dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/vip_exclusive"
+            android:textColor="@color/black"
+
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_discovery_buy_the_book_for_free"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_discovery"
+            android:drawableLeft="@drawable/free_books"
+            android:drawablePadding="7dp"
+            android:gravity="start|center_vertical"
+
+            android:paddingStart="15dp"
+            android:text="@string/buy_the_book_for_free"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_discovery_welfare_field"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_discovery"
+            android:drawableLeft="@drawable/campaigns"
+            android:drawablePadding="7dp"
+            android:gravity="start|center_vertical"
+            android:paddingStart="15dp"
+            android:text="@string/welfare_field"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.5"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:drawableLeft="@drawable/wehear"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/wechat_voice_book_recommend_to_you"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:src="@drawable/me" />
+
+                <TextView
+                    android:id="@+id/tv_discovery_recommend1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="1"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:src="@drawable/me" />
+
+                <TextView
+                    android:id="@+id/tv_discovery_recommend2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="2"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="9"
+                    android:src="@drawable/me" />
+
+                <TextView
+                    android:id="@+id/tv_discovery_recommend3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

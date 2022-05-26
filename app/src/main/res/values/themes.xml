@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Book" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Theme.Book" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/gray</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -12,5 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="bottom_navigation_normal_text">
+        <item name="android:textColor">@color/icon_gray</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="bottom_navigation_selected_text">
+        <item name="android:textColor">@color/icon_blue</item>
+        <item name="android:textSize">10sp</item>
     </style>
 </resources>
